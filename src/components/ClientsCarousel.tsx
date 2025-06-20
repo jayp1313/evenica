@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 const clients = [
   "Alcanna",
@@ -33,33 +34,35 @@ const groupedClients = Array.from(
 
 export default function ClientsCarousel() {
   return (
-    <section id="clients" className="bg-white py-16 px-6 md:px-20">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Our Esteemed Clients
-      </h2>
-
-      <Carousel className="w-full max-w-5xl mx-auto" opts={{ loop: true }}>
-        <CarouselContent>
-          {groupedClients.map((group, index) => (
-            <CarouselItem
-              key={index}
-              className="flex justify-around items-center flex-wrap gap-8"
-            >
-              {group.map((client) => (
-                <Image
-                  key={client}
-                  src={`/clients/${client}.png`}
-                  alt={client}
-                  width={100}
-                  height={60}
-                />
-              ))}
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+    <section id="clients" className="py-16">
+      <MaxWidthWrapper>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          Our Esteemed Clients
+        </h2>
+        <div className="w-24 h-1 bg-purple-600 mx-auto mb-12"></div>
+        <Carousel className="w-full max-w-5xl mx-auto" opts={{ loop: true }}>
+          <CarouselContent>
+            {groupedClients.map((group, index) => (
+              <CarouselItem
+                key={index}
+                className="flex justify-around items-center flex-wrap gap-8"
+              >
+                {group.map((client) => (
+                  <Image
+                    key={client}
+                    src={`/clients/${client}.png`}
+                    alt={client}
+                    width={100}
+                    height={60}
+                  />
+                ))}
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </MaxWidthWrapper>
     </section>
   );
 }

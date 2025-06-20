@@ -125,3 +125,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+img {
+  border-radius: 8px; /* 8px rounded corners */
+}
