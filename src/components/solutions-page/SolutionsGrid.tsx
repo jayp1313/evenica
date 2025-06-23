@@ -39,9 +39,7 @@ export const SolutionsGrid = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white rounded-full">
-                Explore Further
-              </Button>
+              <Button>Explore Further</Button>
             </CardFooter>
           </Card>
 
@@ -61,9 +59,7 @@ export const SolutionsGrid = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white rounded-full">
-                Explore Further
-              </Button>
+              <Button>Explore Further</Button>
             </CardFooter>
           </Card>
           <Card className="h-full flex flex-col transition-all hover:shadow-lg">
@@ -82,9 +78,7 @@ export const SolutionsGrid = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white rounded-full">
-                Explore Further
-              </Button>
+              <Button>Explore Further</Button>
             </CardFooter>
           </Card>
         </div>

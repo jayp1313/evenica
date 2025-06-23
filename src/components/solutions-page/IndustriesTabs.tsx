@@ -7,6 +7,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { industries } from "@/data/industries";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
+import { ArrowRight } from "lucide-react";
 
 export function IndustriesTabs() {
   const defaultValue = industries[0]?.id || "";
@@ -47,8 +48,10 @@ export function IndustriesTabs() {
                     </p>
 
                     {industry.learnMoreHref && (
-                      <Button asChild className="mt-4">
-                        <Link href={industry.learnMoreHref}>Learn More</Link>
+                      <Button asChild>
+                        <Link href={industry.learnMoreHref}>
+                          Learn More <ArrowRight />
+                        </Link>
                       </Button>
                     )}
                   </div>

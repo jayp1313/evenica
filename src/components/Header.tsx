@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
@@ -19,13 +21,16 @@ export default function Header() {
         <div className="grid grid-cols-3 items-center py-4">
           {/* Left: Logos */}
           <div className="flex items-center space-x-4">
-            <Image
-              src="/Evenica-Logo.png"
-              alt="logo"
-              width={150}
-              height={150}
-              className="max-w-[120px] h-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/Evenica-Logo.png"
+                alt="logo"
+                width={150}
+                height={150}
+                className="max-w-[120px] h-auto"
+              />
+            </Link>
+
             <Image
               src="/Solutions-Partner-Short.png"
               alt="partner logo"
@@ -44,14 +49,6 @@ export default function Header() {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <Link href="/">Home</Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
                     <Link href="/solutions">Solutions</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -60,9 +57,25 @@ export default function Header() {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <Link href="/about">About</Link>
+                    <Link href="/resources">Resources</Link>
                   </NavigationMenuLink>
-                  {/* <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <Link href="/case-studies">Case Studies</Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  {/* <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <Link href="/about">About</Link>
+                  </NavigationMenuLink> */}
+                  <NavigationMenuTrigger>About</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[300px] gap-2 p-2">
                       <li>
@@ -116,24 +129,15 @@ export default function Header() {
                         </NavigationMenuLink>
                       </li>
                     </ul>
-                  </NavigationMenuContent> */}
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink
-                    asChild
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    <Link href="/resources">Resources</Link>
-                  </NavigationMenuLink>
+                  </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
 
-          {/* Right: Contact button */}
           <div className="justify-self-end hidden md:block">
-            <Button className="bg-purple-500 hover:bg-purple-600 text-white rounded-full px-6">
-              Contact
+            <Button asChild>
+              <Link href="/contact">Contact</Link>
             </Button>
           </div>
         </div>

@@ -8,9 +8,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer className="border-t-2 border-gray-300 shadow-sm">
       <MaxWidthWrapper>
-        <div className=" py-6  flex flex-col md:flex-row justify-between items-center text-sm text-gray-700">
+        <div className="py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-700">
           <div className="mb-4 md:mb-0">
             © {year} Evenica. All rights reserved.
           </div>

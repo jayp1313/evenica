@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -23,8 +24,10 @@ export default function HeroSection() {
         the Microsoft channel to elevate your brand. 2022 Microsoft Partner of
         the Year Finalist for Dynamics 365 Commerce.
       </p>
-      <Button className="bg-purple-500 hover:bg-purple-600 text-white rounded-full px-6 py-5">
-        Learn More <ArrowRight />
+      <Button asChild>
+        <Link href="/about">
+          Learn More <ArrowRight />
+        </Link>
       </Button>
     </section>
   );

@@ -73,7 +73,6 @@ export default function AwardsSection() {
                 the story, please click below.
               </p>
               <Button
-                className="bg-purple-500 hover:bg-purple-600 text-white rounded-full px-6"
                 onClick={() =>
                   window.open(
                     "https://dynamicspartners.transform.microsoft.com/download?assetname=assets%2FEvenica-KASCO_Case%20study_11182021.pdf&download=1",

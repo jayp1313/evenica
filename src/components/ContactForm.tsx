@@ -9,7 +9,7 @@ import { Linkedin, Facebook, Twitter } from "lucide-react";
 
 export default function ContactForm() {
   return (
-    <section id="contact" className="bg-white py-20">
+    <section className="bg-white py-20">
       <MaxWidthWrapper>
         <div className="grid md:grid-cols-2 gap-12 items-end">
           {/* Contact Info */}
@@ -39,12 +39,7 @@ export default function ContactForm() {
             </div>
             <Input type="email" placeholder="Email *" required />
             <Textarea placeholder="Leave us a message..." rows={4} />
-            <Button
-              type="submit"
-              className="bg-purple-500 hover:bg-purple-600 text-white rounded-full px-6"
-            >
-              Submit
-            </Button>
+            <Button type="submit">Submit</Button>
           </form>
         </div>
       </MaxWidthWrapper>

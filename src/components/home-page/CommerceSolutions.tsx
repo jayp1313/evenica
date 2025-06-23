@@ -3,6 +3,8 @@
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 
 export default function CommerceSolutions() {
   return (
@@ -15,7 +17,7 @@ export default function CommerceSolutions() {
             height={600}
             width={600}
           />
-          {/* Right text */}
+
           <div>
             <h2 className="text-3xl md:text-4xl font-semibold  mb-6">
               Innovative Commerce Solutions
@@ -31,12 +33,11 @@ export default function CommerceSolutions() {
               – including retail, manufacturing, public sector, healthcare and
               more.
             </p>
-            <Link
-              href="#"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              Learn more
-            </Link>
+            <Button asChild>
+              <Link href="/solutions">
+                Learn more <ArrowRight />
+              </Link>
+            </Button>
           </div>
         </div>
       </MaxWidthWrapper>
