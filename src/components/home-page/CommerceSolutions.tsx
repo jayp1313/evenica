@@ -1,5 +1,4 @@
 "use client";
-
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,7 +32,7 @@ export default function CommerceSolutions() {
               – including retail, manufacturing, public sector, healthcare and
               more.
             </p>
-            <Button asChild>
+            <Button variant="outline" asChild>
               <Link href="/solutions">
                 Learn more <ArrowRight />
               </Link>

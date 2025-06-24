@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { values } from "@/data/core-values";
+import { values } from "@/data/coreValues";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export default function CoreValuesSection() {

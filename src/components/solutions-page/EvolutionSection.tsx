@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { PhasesAccordion } from "./PhasesAccordion";
@@ -5,7 +6,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export const EvolutionSection = () => {
   return (
-    <section className="space-y-10">
+    <section className="mb-18 space-y-10">
       <MaxWidthWrapper>
         <div className="space-y-12">
           <div className="text-center">

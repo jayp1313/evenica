@@ -1,3 +1,4 @@
+"use client";
 import {
   Card,
   CardContent,
@@ -11,7 +12,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export const SolutionsGrid = () => {
   return (
-    <section className=" mb-15">
+    <section className="mb-18">
       <MaxWidthWrapper>
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">

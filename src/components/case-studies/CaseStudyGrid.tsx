@@ -1,6 +1,7 @@
+"use client";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 import { CaseStudyCard } from "./CaseStudyCard";
-import { caseStudies } from "@/data/case-studies";
+import { caseStudies } from "@/data/caseStudies";
 
 export const CaseStudyGrid = () => {
   return (

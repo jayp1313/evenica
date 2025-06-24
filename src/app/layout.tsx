@@ -1,4 +1,3 @@
-// app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
@@ -7,8 +6,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Evenica - Home",
-  description: "A modern web app with Next.js, Tailwind, shadcn",
+  title: "Evenica | E-Commerce Solutions & Microsoft D365 Experts",
+  description:
+    "Evenica is a leading provider of enterprise-grade e-commerce solutions. We help brands deliver sophisticated digital commerce experiences with Microsoft Dynamics 365 Commerce and our proprietary platforms.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -22,17 +22,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
 
         <main
-          className={cn(
-            "flex-1 min-w-full",
-            // Center content + padding for all screen sizes
-            "",
-            // Restrict max-width on large screens
-            "max-w-7xl mx-auto"
-          )}
+          className={cn("flex-1 min-w-full mt-18", "", "max-w-7xl mx-auto")}
         >
           {children}
         </main>
-
         <Footer />
       </body>
     </html>

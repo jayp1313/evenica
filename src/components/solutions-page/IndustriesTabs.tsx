@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +12,7 @@ export function IndustriesTabs() {
   const defaultValue = industries[0]?.id || "";
 
   return (
-    <div className="space-y-10">
+    <section className="space-y-10 pt-5 -mt-16" id="industries">
       <div className="my-12">
         <h2 className="text-center text-3xl font-semibold bg-[#0D0D3C] text-white py-6 px-4">
           INDUSTRIES WE SERVE
@@ -71,7 +70,7 @@ export function IndustriesTabs() {
                   )}
                 </div>
 
-                <div className="my-12">
+                <div className="my-18">
                   <h3 className="text-2xl font-bold text-center my-12">
                     Commerce for {industry.title} Priorities
                   </h3>
@@ -114,8 +113,7 @@ export function IndustriesTabs() {
             new e-commerce solution.
           </p>
         </section>
-        <section></section>
       </MaxWidthWrapper>
-    </div>
+    </section>
   );
 }

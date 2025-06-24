@@ -5,7 +5,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export default function ClosingSection() {
   return (
-    <section>
+    <section className="mt-12">
       <MaxWidthWrapper>
         <div className="flex flex-col items-center justify-center space-y-8">
           <div className="p-6 bg-white rounded-full shadow-lg">
