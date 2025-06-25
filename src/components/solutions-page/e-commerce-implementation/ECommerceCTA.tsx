@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ECommerceCTA() {
   return (
-    <section className="bg-[#0D0D3C] text-white py-16 text-center">
+    <section className="bg-[#0D0D3C] text-white py-16 text-center my-12">
       <MaxWidthWrapper>
         <div className="text-center space-y-8">
           <h2 className="text-2xl font-bold text-white mb-3">

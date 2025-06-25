@@ -127,5 +127,9 @@
 }
 
 img {
-  border-radius: 8px; /* 8px rounded corners */
+  border-radius: 8px;
+}
+
+section {
+  padding-block: 48px;
 }

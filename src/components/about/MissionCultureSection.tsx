@@ -5,9 +5,9 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export default function MissionCultureSection() {
   return (
-    <section className="mb-16 md:mb-20">
+    <section>
       <MaxWidthWrapper>
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Our Mission & Culture
           </h2>

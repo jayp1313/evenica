@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function CommerceSolutions() {
   return (
-    <section className="bg-[#0D0D3C] text-white  py-20 ">
+    <section className="bg-[#0D0D3C] text-white py-20 my-12">
       <MaxWidthWrapper>
         <div className="grid md:grid-cols-2 gap-12 items-center content-center">
           <Image

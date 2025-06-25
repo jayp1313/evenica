@@ -1,25 +1,24 @@
 "use client";
 import * as React from "react";
 import Image from "next/image";
-import Link from "next/link";
+
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
+
 import { industries } from "@/data/industries";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
-import { ArrowRight } from "lucide-react";
 
 export function IndustriesTabs() {
   const defaultValue = industries[0]?.id || "";
 
   return (
-    <section className="pt-5 -mt-16" id="industries">
+    <section className="!pt-5 -mt-2" id="industries">
       <div className="my-12">
         <h2 className="text-center text-3xl font-semibold bg-[#0D0D3C] text-white py-6 px-4">
           INDUSTRIES WE SERVE
         </h2>
       </div>
       <MaxWidthWrapper>
-        <section>
+        <div>
           <Tabs defaultValue={defaultValue} className="w-full">
             <TabsList className="overflow-x-auto no-scrollbar min-w-full">
               {industries.map((industry) => (
@@ -45,14 +44,6 @@ export function IndustriesTabs() {
                     <p className="text-lg text-gray-700">
                       {industry.description}
                     </p>
-
-                    {industry.learnMoreHref && (
-                      <Button asChild>
-                        <Link href={industry.learnMoreHref}>
-                          Learn More <ArrowRight />
-                        </Link>
-                      </Button>
-                    )}
                   </div>
 
                   {industry.imageSrc && (
@@ -89,8 +80,8 @@ export function IndustriesTabs() {
               </TabsContent>
             ))}
           </Tabs>
-        </section>
-        <section className="mb-20 text-lg">
+        </div>
+        <div className="text-lg">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
             Commerce Solutions for All Industries
           </h2>
@@ -112,7 +103,7 @@ export function IndustriesTabs() {
             existing technology partners to bring an omnichannel approach to a
             new e-commerce solution.
           </p>
-        </section>
+        </div>
       </MaxWidthWrapper>
     </section>
   );

@@ -8,10 +8,10 @@ const SideMenu = () => {
   const SideMenuItems = [
     { label: "Home", href: "/" },
     { label: "Solutions", href: "/solutions" },
-    { label: "Resources", href: "/resources" },
     { label: "Case Studies", href: "/case-studies" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Microsoft", href: "/microsoft" },
     { label: "Careers", href: "/careers" },
     { label: "Privacy", href: "/privacy" },
   ];
@@ -25,10 +25,10 @@ const SideMenu = () => {
       </SheetTrigger>
       <SheetContent
         side={"left"}
-        className="flex w-full flex-col sm:max-w-lg z-[1000000] h-full"
+        className="flex w-full flex-col sm:max-w-lg z-[1000000] h-full p-4"
       >
-        <div className="flex flex-col h-full justify-between p-6">
-          <div className="flex flex-col justify-center flex-grow">
+        <div className="flex flex-col h-full justify-between ">
+          <div className="flex flex-col justify-center flex-grow p-12">
             <ul className="flex flex-col gap-4">
               {SideMenuItems.map((item, index) => (
                 <li key={index}>
@@ -36,7 +36,7 @@ const SideMenu = () => {
                     <SheetClose asChild>
                       <Link
                         href={item.href}
-                        className="text-xl font-medium hover:text-muted-foreground"
+                        className="text-3xl font-medium hover:text-muted-foreground"
                       >
                         {item.label}
                       </Link>

@@ -5,7 +5,7 @@ import React from "react";
 
 export const IntroSection = () => {
   return (
-    <section className="mb-18">
+    <section>
       <MaxWidthWrapper>
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="lg:flex-1 space-y-6">

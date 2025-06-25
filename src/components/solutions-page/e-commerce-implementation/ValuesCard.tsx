@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ValuesCard() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section>
       <MaxWidthWrapper>
         <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
           Why Partner With Evenica

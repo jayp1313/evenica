@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 export default function AwardsSection() {
   return (
-    <section className="py-16">
+    <section>
       <MaxWidthWrapper>
         <div className="space-y-16">
           <div className="flex flex-col md:flex-row items-center gap-8">

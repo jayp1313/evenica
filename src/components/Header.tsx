@@ -37,28 +37,28 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <MaxWidthWrapper>
         <div className="flex items-center justify-between py-4 md:grid md:grid-cols-3 md:items-center">
-          {/* Left section (logo + hamburger) */}
           <div className="flex items-center space-x-3">
             {isMobile && <SideMenu />}
             <Link href="/">
               <Image
                 src="/Evenica-Logo.png"
                 alt="logo"
-                width={150}
-                height={150}
-                className="max-w-[120px] h-auto"
+                width={200}
+                height={200}
+                className="max-w-[140px] h-auto"
               />
             </Link>
-            <Image
-              src="/Solutions-Partner-Short.png"
-              alt="partner logo"
-              width={120}
-              height={120}
-              className="max-w-[100px] h-auto"
-            />
+            <Link href="/microsoft">
+              <Image
+                src="/Solutions-Partner-Short.png"
+                alt="partner logo"
+                width={200}
+                height={200}
+                className="max-w-[130px] h-auto"
+              />
+            </Link>
           </div>
 
-          {/* Center nav menu (only on md and up) */}
           {!isMobile && (
             <div className="justify-self-center">
               <NavigationMenu>
@@ -68,7 +68,7 @@ export default function Header() {
                       asChild
                       className={navigationMenuTriggerStyle()}
                     >
-                      <Link href="/solutions">Solutions</Link>
+                      <Link href="/">Home</Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
@@ -76,9 +76,10 @@ export default function Header() {
                       asChild
                       className={navigationMenuTriggerStyle()}
                     >
-                      <Link href="/resources">Resources</Link>
+                      <Link href="/solutions">Solutions</Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
+
                   <NavigationMenuItem>
                     <NavigationMenuLink
                       asChild
@@ -100,7 +101,6 @@ export default function Header() {
             </div>
           )}
 
-          {/* Right contact button (only on md and up) */}
           {!isMobile && (
             <div className="justify-self-end">
               <Button asChild>

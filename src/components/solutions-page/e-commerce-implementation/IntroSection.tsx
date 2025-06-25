@@ -4,7 +4,7 @@ import React from "react";
 
 export default function IntroSection() {
   return (
-    <section className="mb-18">
+    <section>
       <MaxWidthWrapper>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

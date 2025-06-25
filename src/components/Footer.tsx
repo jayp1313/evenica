@@ -19,6 +19,10 @@ export default function Footer() {
               Privacy
             </Link>
 
+            <Link href="/microsoft" className="hover:underline">
+              Microsoft
+            </Link>
+
             <Link href="/solutions#industries" className="hover:underline">
               Industries
             </Link>

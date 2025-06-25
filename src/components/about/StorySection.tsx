@@ -4,7 +4,7 @@ import React from "react";
 
 export default function StorySection() {
   return (
-    <section className="mb-16 md:mb-20">
+    <section>
       <MaxWidthWrapper>
         <div className="space-y-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

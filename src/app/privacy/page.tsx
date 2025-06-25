@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <main className="bg-white text-gray-800 py-12 md:py-16 ">
+    <main className="bg-white text-gray-800 ">
       <HeroSection
         title="Privacy Policy"
         subtitle="Your privacy is critically important to us."

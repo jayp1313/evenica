@@ -5,7 +5,7 @@ import { caseStudies } from "@/data/caseStudies";
 
 export const CaseStudyGrid = () => {
   return (
-    <section className="mb-20">
+    <section>
       <MaxWidthWrapper>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {caseStudies.map((study) => (

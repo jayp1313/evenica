@@ -16,17 +16,15 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex flex-col pb-12 md:pb-16">
-        <HeroSection />
-        <ServicesSection />
-        <StatsSection />
-        <AwardsSection />
-        <ClientsCarousel />
-        <CommerceSolutions />
-        <ContactForm />
-        <MapLocation />
-      </main>
-    </div>
+    <main className="flex flex-col">
+      <HeroSection />
+      <ServicesSection />
+      <StatsSection />
+      <AwardsSection />
+      <ClientsCarousel />
+      <CommerceSolutions />
+      <ContactForm />
+      <MapLocation />
+    </main>
   );
 }

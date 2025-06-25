@@ -4,7 +4,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export default function StatsSection() {
   return (
-    <section className="bg-[#0D0D3C] text-white py-16">
+    <section className="bg-[#0D0D3C] text-white my-12">
       <MaxWidthWrapper>
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-10">

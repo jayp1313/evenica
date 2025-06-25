@@ -4,7 +4,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export const CultureSection = () => {
   return (
-    <section className="mb-18">
+    <section>
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-2 space-y-4">

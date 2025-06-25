@@ -1,10 +1,13 @@
 "use client";
 import Image from "next/image";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
+import { ArrowRight } from "lucide-react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function MicrosoftAllianceSection() {
   return (
-    <section className="max-w-8xl bg-[#0D0D3C] text-white py-16">
+    <section className="bg-[#0D0D3C] text-white !py-18 my-12">
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1 space-y-4">
@@ -24,6 +27,11 @@ export default function MicrosoftAllianceSection() {
               alignment with our partners is the engine to innovation and
               growth.
             </p>
+            <Button variant="outline" asChild>
+              <Link href="/microsoft">
+                Learn more <ArrowRight />
+              </Link>
+            </Button>
           </div>
 
           <div className="flex-1 flex justify-center">

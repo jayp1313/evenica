@@ -4,7 +4,7 @@ import { services } from "@/data/servicess";
 
 export default function ServicesSection() {
   return (
-    <section className="py-16">
+    <section>
       <MaxWidthWrapper>
         <div className="text-center px-4">
           <p className="text-purple-600 text-sm font-semibold tracking-wide uppercase mb-4">

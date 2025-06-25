@@ -6,7 +6,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export const EvolutionSection = () => {
   return (
-    <section className="mb-18">
+    <section>
       <MaxWidthWrapper>
         <div className="space-y-12">
           <div className="text-center">

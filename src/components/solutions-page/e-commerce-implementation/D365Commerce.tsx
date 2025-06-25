@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function D365Commerce() {
   return (
-    <section className="py-16 md:py-20">
+    <section>
       <MaxWidthWrapper>
         <div className="grid md:grid-cols-2 gap-12 items-center ">
           <div className="order-1 md:order-2 space-y-6">

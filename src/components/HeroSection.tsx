@@ -7,9 +7,9 @@ export default function HeroSection(props: {
   subtitle: string;
 }) {
   return (
-    <section className="text-center mb-18">
+    <section className="text-center !pt-12 !pb-6">
       <MaxWidthWrapper>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 ">
           {props.title}
         </h1>
         <p className="text-lg text-gray-600">{props.subtitle}</p>

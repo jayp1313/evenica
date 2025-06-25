@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function PrivacyPolicySection() {
   return (
-    <section className="">
+    <section>
       <MaxWidthWrapper>
         <article className="prose lg:prose-xl">
-          <div className="space-y-12">
-            <section>
+          <div className="space-y-8">
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 1. General Information
               </h2>
@@ -40,9 +40,9 @@ export default function PrivacyPolicySection() {
                   agree to additional terms and conditions.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 2. Website Visitors
               </h2>
@@ -68,9 +68,9 @@ export default function PrivacyPolicySection() {
                   personally-identifying information as described below.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 3. Gathering of Personally-Identifying Information
               </h2>
@@ -84,9 +84,9 @@ export default function PrivacyPolicySection() {
                   blog at Website to provide a username and email address.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 4. Security
               </h2>
@@ -100,9 +100,9 @@ export default function PrivacyPolicySection() {
                   security.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 5. Advertisements
               </h2>
@@ -119,9 +119,9 @@ export default function PrivacyPolicySection() {
                   and does not cover the use of cookies by any advertisers.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 6. Links to External Sites
               </h2>
@@ -136,9 +136,9 @@ export default function PrivacyPolicySection() {
                   of any third party sites, products or services.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 7. Protection of Certain Personally-Identifying Information
               </h2>
@@ -180,9 +180,9 @@ export default function PrivacyPolicySection() {
                   information.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 8. Aggregate Statistics
               </h2>
@@ -194,9 +194,9 @@ export default function PrivacyPolicySection() {
                   your personally-identifying information.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 9. Cookies
               </h2>
@@ -225,9 +225,9 @@ export default function PrivacyPolicySection() {
                   use of cookies.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 10. E-commerce
               </h2>
@@ -247,9 +247,9 @@ export default function PrivacyPolicySection() {
                   website-related activities.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 11. Privacy Policy Changes
               </h2>
@@ -263,9 +263,9 @@ export default function PrivacyPolicySection() {
                   Policy will constitute your acceptance of such change.
                 </p>
               </div>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 12. Credit & Contact Information
               </h2>
@@ -299,7 +299,7 @@ export default function PrivacyPolicySection() {
                   </a>
                 </address>
               </div>
-            </section>
+            </div>
           </div>
         </article>
       </MaxWidthWrapper>

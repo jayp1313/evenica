@@ -14,7 +14,7 @@ import Link from "next/link";
 
 export default function ContactForm() {
   return (
-    <section className="bg-white py-20">
+    <section>
       <MaxWidthWrapper>
         <div className="grid md:grid-cols-2 gap-12 items-end">
           <div>

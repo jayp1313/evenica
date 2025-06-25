@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const CaseStudiesPage = () => {
   return (
-    <main className="bg-white text-gray-800 py-12 md:py-16 px-4 sm:px-6 lg:px-0 ">
+    <main className="bg-white text-gray-800  ">
       <HeroSection
         title="Case Studies"
         subtitle="Explore our successful projects and client success stories"
