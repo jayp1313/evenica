@@ -3,7 +3,7 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 
 export const CareerCTA = () => {
   return (
-    <section className="max-w-8xl bg-[#0D0D3C] text-white py-16 text-center">
+    <section className="bg-[#0D0D3C] text-white py-16 text-center">
       <MaxWidthWrapper>
         <div className="text-white">
           <h3 className="text-2xl font-bold text-white mb-3">

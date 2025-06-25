@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
+import Link from "next/link";
 
 export const SolutionsGrid = () => {
   return (
@@ -40,7 +41,11 @@ export const SolutionsGrid = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button>Explore Further</Button>
+              <Button>
+                <Link href="/solutions/e-commerce-implementation">
+                  Explore Further
+                </Link>
+              </Button>
             </CardFooter>
           </Card>
 
@@ -60,7 +65,9 @@ export const SolutionsGrid = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button>Explore Further</Button>
+              <Button>
+                <Link href="/contact">Explore Further</Link>
+              </Button>
             </CardFooter>
           </Card>
           <Card className="h-full flex flex-col transition-all hover:shadow-lg">
@@ -79,7 +86,9 @@ export const SolutionsGrid = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button>Explore Further</Button>
+              <Button>
+                <Link href="/contact">Explore Further</Link>
+              </Button>
             </CardFooter>
           </Card>
         </div>

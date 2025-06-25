@@ -1,17 +1,14 @@
+"use client";
 import "./globals.css";
-import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
-export const metadata: Metadata = {
-  title: "Evenica | E-Commerce Solutions & Microsoft D365 Experts",
-  description:
-    "Evenica is a leading provider of enterprise-grade e-commerce solutions. We help brands deliver sophisticated digital commerce experiences with Microsoft Dynamics 365 Commerce and our proprietary platforms.",
-};
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
   return (
     <html lang="en">
       <body
@@ -21,11 +18,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <Header />
 
-        <main
-          className={cn("flex-1 min-w-full mt-18", "", "max-w-7xl mx-auto")}
+        <motion.div
+          key={pathname}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4 }}
         >
-          {children}
-        </main>
+          <main
+            className={cn("flex-1 min-w-full mt-18", "", "max-w-7xl mx-auto")}
+          >
+            {children}
+          </main>
+        </motion.div>
+
         <Footer />
       </body>
     </html>

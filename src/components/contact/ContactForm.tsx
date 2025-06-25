@@ -3,7 +3,14 @@ import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Linkedin, Facebook, Twitter, PhoneIcon } from "lucide-react";
+import {
+  Linkedin,
+  Facebook,
+  Twitter,
+  PhoneIcon,
+  Instagram,
+} from "lucide-react";
+import Link from "next/link";
 
 export default function ContactForm() {
   return (
@@ -36,10 +43,35 @@ export default function ContactForm() {
               </a>
             </p>
 
-            <div className="flex space-x-4">
-              <Linkedin className="cursor-pointer" />
-              <Facebook className="cursor-pointer" />
-              <Twitter className="cursor-pointer" />
+            <div className="flex space-x-6">
+              <Link
+                href="https://www.linkedin.com/company/evenica/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5 hover:text-blue-700" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/people/Evenica/100068591972640/#"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 hover:text-blue-600" />
+              </Link>
+              <Link
+                href="https://x.com/evenicacorp"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-5 h-5 hover:text-blue-400" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/evenicacorp/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 hover:text-pink-500" />
+              </Link>
             </div>
           </div>
 

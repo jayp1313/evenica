@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function SolutionsPage() {
   return (
-    <main className="bg-white text-gray-800 py-12 md:py-16 px-4 sm:px-6 lg:px-0 ">
+    <main className="bg-white text-gray-800 py-12 md:py-16 space-y-3">
       <HeroSection
         title="E-Commerce Solutions"
         subtitle="Transforming your e-commerce vision into reality with proven

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function ContactInfoSection() {
   return (
-    <section className="py-16 ">
+    <section className="py-16 mb-18">
       <MaxWidthWrapper>
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

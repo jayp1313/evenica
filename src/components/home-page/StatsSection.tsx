@@ -19,7 +19,11 @@ export default function StatsSection() {
               { value: "10+", label: "Intl. Partners" },
             ].map((stat, index) => (
               <>
-                {index > 0 && <div className="hidden md:block text-3xl">·</div>}
+                {index > 0 && (
+                  <div key={index} className="hidden md:block text-3xl">
+                    ·
+                  </div>
+                )}
                 <div key={stat.label} className="flex flex-col items-center">
                   <span className="text-5xl font-extrabold">{stat.value}</span>
                   <span className="mt-2 text-sm">{stat.label}</span>

@@ -12,7 +12,7 @@ export function IndustriesTabs() {
   const defaultValue = industries[0]?.id || "";
 
   return (
-    <section className="space-y-10 pt-5 -mt-16" id="industries">
+    <section className="pt-5 -mt-16" id="industries">
       <div className="my-12">
         <h2 className="text-center text-3xl font-semibold bg-[#0D0D3C] text-white py-6 px-4">
           INDUSTRIES WE SERVE
@@ -37,7 +37,7 @@ export function IndustriesTabs() {
               <TabsContent
                 key={industry.id}
                 value={industry.id}
-                className="mt-4 my-12"
+                className="mt-12"
               >
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="flex-1 space-y-4">
