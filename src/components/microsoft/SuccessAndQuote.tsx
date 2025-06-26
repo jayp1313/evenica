@@ -6,7 +6,6 @@ export const SuccessAndQuote = () => (
   <section>
     <MaxWidthWrapper>
       <div className="grid md:grid-cols-2 gap-12">
-        {/* Success Story */}
         <div className="bg-gray-100 p-8 rounded-xl">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">

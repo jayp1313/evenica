@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function CareersPage() {
   return (
-    <main className="bg-white text-gray-800">
+    <main>
       <HeroSection
         title=" Life At Evenica"
         subtitle=" We're always interested in people who are ambitious, dedicated

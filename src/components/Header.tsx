@@ -14,7 +14,7 @@ import SideMenu from "./SideMenu";
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  const breakpoint = 768;
+  const breakpoint = 950;
   const [isMobile, setIsMobile] = useState(
     typeof window !== "undefined" ? window.innerWidth <= breakpoint : false
   );

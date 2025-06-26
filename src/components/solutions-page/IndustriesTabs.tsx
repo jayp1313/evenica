@@ -38,7 +38,7 @@ export function IndustriesTabs() {
                 value={industry.id}
                 className="mt-12"
               >
-                <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex md:flex-row items-center gap-10 flex-col-reverse">
                   <div className="flex-1 space-y-4">
                     <h3 className="text-2xl font-bold">{industry.title}</h3>
                     <p className="text-lg text-gray-700">

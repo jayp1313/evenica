@@ -9,7 +9,6 @@ export const Capabilities = () => (
         Our Microsoft Capabilities
       </h2>
       <div className="grid md:grid-cols-3 gap-8">
-        {/* Competencies */}
         <div className="border-l-4 border-yellow-500 pl-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-6">
             Competencies
@@ -46,7 +45,6 @@ export const Capabilities = () => (
           </div>
         </div>
 
-        {/* Marketplace Offers */}
         <div className="border-l-4 border-blue-500 pl-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-6">
             Marketplace Offers
@@ -69,7 +67,6 @@ export const Capabilities = () => (
           </ul>
         </div>
 
-        {/* Areas of Expertise */}
         <div className="border-l-4 border-purple-500 pl-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-6">
             Areas of Expertise

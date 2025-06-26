@@ -6,7 +6,7 @@ export const CultureSection = () => {
   return (
     <section>
       <MaxWidthWrapper>
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex md:flex-row items-center gap-10 flex-col-reverse">
           <div className="flex-2 space-y-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
               Our Culture
@@ -34,7 +34,6 @@ export const CultureSection = () => {
                 alt="evenica-careers"
                 width={300}
                 height={300}
-                className=""
               />
             </div>
           </div>

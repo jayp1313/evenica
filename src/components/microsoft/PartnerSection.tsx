@@ -9,7 +9,6 @@ export const PartnerSection = () => {
   return (
     <section>
       <MaxWidthWrapper>
-        {/* Partnership Approach */}
         <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -42,7 +41,6 @@ export const PartnerSection = () => {
           </div>
         </div>
 
-        {/* Partner of the Year */}
         <div className="flex flex-col md:flex-row items-center gap-12 mb-20 bg-[#0D0D3C] p-8 rounded-xl">
           <div className="flex-shrink-0">
             <Image
@@ -68,14 +66,12 @@ export const PartnerSection = () => {
           </div>
         </div>
 
-        {/* Competencies & Expertise */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Our Microsoft Capabilities
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Competencies */}
             <div className="border-l-4 border-yellow-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">
                 Competencies
@@ -114,7 +110,6 @@ export const PartnerSection = () => {
               </div>
             </div>
 
-            {/* Marketplace Offers */}
             <div className="border-l-4 border-blue-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">
                 Marketplace Offers
@@ -139,7 +134,6 @@ export const PartnerSection = () => {
               </ul>
             </div>
 
-            {/* Areas of Expertise */}
             <div className="border-l-4 border-purple-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">
                 Areas of Expertise
@@ -166,7 +160,6 @@ export const PartnerSection = () => {
           </div>
         </div>
 
-        {/* Program Participation */}
         <div className="mb-20 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Program Participation
@@ -184,9 +177,7 @@ export const PartnerSection = () => {
           </div>
         </div>
 
-        {/* Success Story & Quote */}
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Success Story */}
           <div className="bg-gray-100 p-8 rounded-xl">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
@@ -224,7 +215,6 @@ export const PartnerSection = () => {
             </Button>
           </div>
 
-          {/* CEO Quote */}
           <div className="bg-gray-100 p-8 rounded-xl">
             <blockquote className="space-y-6">
               <p className="text-xl italic text-gray-700 leading-relaxed">

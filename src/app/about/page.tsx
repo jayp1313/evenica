@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function AboutUsPage() {
   return (
-    <main className="bg-white text-gray-800">
+    <main>
       <HeroSection
         title="About Evenica"
         subtitle="Empowering brands with sophisticated digital commerce experiences."

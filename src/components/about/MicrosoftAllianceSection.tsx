@@ -10,6 +10,15 @@ export default function MicrosoftAllianceSection() {
     <section className="bg-[#0D0D3C] text-white !py-18 my-12">
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row items-center gap-10">
+          <div className="flex-1 flex justify-center">
+            <Image
+              src="/Solutions-Partner-Long.png"
+              alt="Microsoft Alliance"
+              width={500}
+              height={400}
+              className="object-cover w-full max-w-sm md:max-w-md"
+            />
+          </div>
           <div className="flex-1 space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">
               Microsoft Alliance
@@ -32,16 +41,6 @@ export default function MicrosoftAllianceSection() {
                 Learn more <ArrowRight />
               </Link>
             </Button>
-          </div>
-
-          <div className="flex-1 flex justify-center">
-            <Image
-              src="/Solutions-Partner-Long.png"
-              alt="Microsoft Alliance"
-              width={500}
-              height={400}
-              className="object-cover w-full max-w-sm md:max-w-md"
-            />
           </div>
         </div>
       </MaxWidthWrapper>

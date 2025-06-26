@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="bg-white text-gray-800 ">
+    <main>
       <HeroSection
         title="Get in touch"
         subtitle="Let’s build something remarkable together."

@@ -5,7 +5,7 @@ import Image from "next/image";
 export const MicrosoftPartnership = () => (
   <section>
     <MaxWidthWrapper>
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="flex md:flex-row items-center gap-10 flex-col-reverse">
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Microsoft Partnership
@@ -27,14 +27,13 @@ export const MicrosoftPartnership = () => (
             </p>
           </div>
         </div>
-        <div className="relative aspect-video rounded-lg overflow-hidden shadow-md">
-          <Image
-            src="/Evenica_Microsoft-Toronto-HQ.jpg"
-            alt="Microsoft Partnership"
-            fill
-            className="object-cover"
-          />
-        </div>
+
+        <Image
+          src="/Evenica_Microsoft-Toronto-HQ.jpg"
+          alt="Microsoft Partnership"
+          width={500}
+          height={500}
+        />
       </div>
     </MaxWidthWrapper>
   </section>

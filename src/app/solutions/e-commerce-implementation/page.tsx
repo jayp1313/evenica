@@ -6,7 +6,7 @@ import ECommerceCTA from "@/components/solutions-page/e-commerce-implementation/
 
 export default function ECommerceImplementationPage() {
   return (
-    <main className="bg-white text-gray-800 ">
+    <main>
       <HeroSection
         title="E-Commerce Implementation"
         subtitle="Accelerating Your Digital Commerce Success Through Proven Expertise"

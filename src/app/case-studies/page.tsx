@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const CaseStudiesPage = () => {
   return (
-    <main className="bg-white text-gray-800  ">
+    <main>
       <HeroSection
         title="Case Studies"
         subtitle="Explore our successful projects and client success stories"

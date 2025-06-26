@@ -9,19 +9,28 @@ export default function D365Commerce() {
   return (
     <section>
       <MaxWidthWrapper>
-        <div className="grid md:grid-cols-2 gap-12 items-center ">
-          <div className="order-1 md:order-2 space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        <div className="flex flex-col md:flex-row items-center gap-10">
+          <div className="flex-1 flex justify-center">
+            <Image
+              src="/D365-Commerce.png"
+              alt="Microsoft Dynamics 365 Commerce"
+              width={400}
+              height={400}
+            />
+          </div>
+
+          <div className="flex-1 space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">
               Microsoft Dynamics 365 Commerce
             </h2>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-gray-700 ">
               Evenica is the leading implementor of Microsoft Dynamics 365
               Commerce and an early adopter of this robust platform. We&apos;re
               trusted by some of the world&apos;s most respected brands with
               implementation through our experienced team using our rapid time
               to value deployment.
             </p>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-gray-700 ">
               Evenica is a Microsoft Gold Partner and recognized as e-commerce
               experts within the Microsoft channel.
             </p>
@@ -41,14 +50,6 @@ export default function D365Commerce() {
                 Learn more <ArrowRight />
               </Link>
             </Button>
-          </div>
-          <div className="order-2 md:order-1">
-            <Image
-              src="/D365-Commerce.png"
-              alt="Microsoft Dynamics 365 Commerce"
-              width={600}
-              height={400}
-            />
           </div>
         </div>
       </MaxWidthWrapper>

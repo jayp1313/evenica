@@ -25,7 +25,7 @@ const SideMenu = () => {
       </SheetTrigger>
       <SheetContent
         side={"left"}
-        className="flex w-full flex-col sm:max-w-lg z-[1000000] h-full p-4"
+        className="flex w-full flex-col sm:max-w-md z-[1000000] h-full p-4"
       >
         <div className="flex flex-col h-full justify-between ">
           <div className="flex flex-col justify-center flex-grow p-12">

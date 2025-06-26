@@ -7,7 +7,7 @@ export const IntroSection = () => {
   return (
     <section>
       <MaxWidthWrapper>
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
+        <div className="flex md:flex-row items-center gap-10 flex-col-reverse">
           <div className="lg:flex-1 space-y-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
               Innovative Digital Commerce Experiences

@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body
         className={cn(
-          "flex min-h-screen flex-col bg-background text-foreground"
+          "flex min-h-screen flex-col bg-background text-foreground min-w-full sm:min-w-lg"
         )}
       >
         <Header />
@@ -25,11 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <main
-            className={cn("flex-1 min-w-full mt-18", "", "max-w-7xl mx-auto")}
-          >
-            {children}
-          </main>
+          <main className={cn("flex-1 mt-18 ")}>{children}</main>
         </motion.div>
 
         <Footer />

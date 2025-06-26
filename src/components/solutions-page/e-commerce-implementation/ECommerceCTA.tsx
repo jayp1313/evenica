@@ -1,5 +1,6 @@
 import MaxWidthWrapper from "@/app/utility/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 export default function ECommerceCTA() {
@@ -14,7 +15,9 @@ export default function ECommerceCTA() {
             Evenica supports brands by providing the most demanding and
             sophisticated digital experiences through e-commerce solutions.
           </p>
-          <Button variant="outline">Get started</Button>
+          <Button variant="outline">
+            <Link href="/contact">Get started</Link>
+          </Button>
         </div>
       </MaxWidthWrapper>
     </section>
